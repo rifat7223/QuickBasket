@@ -13,7 +13,7 @@ const Navbar = () => {
   </>
     return (
         <div>
-            <div className="navbar bg-base-100 shadow-sm">
+            <div className="navbar bg-base-100 shadow-sm max-w-11/12 mx-auto rounded-2xl">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -28,8 +28,9 @@ const Navbar = () => {
         
       </ul>
     </div>
-   <div className='flex justify-center '>
-     <Logo></Logo><a className="btn btn-ghost text-xl -pr-50">QuickBasket</a>
+   <div className='flex items-end  '>
+     <Logo></Logo>
+     <h3 className='-ms-5 font-bold'>QuickBasket</h3>
    </div>
     
   </div>
