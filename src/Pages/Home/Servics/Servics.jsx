@@ -47,6 +47,7 @@ const Servics = () => {
                     <p className='text-[#606060]'>We deliver parcels within 24–72 hours in Dhaka, Chittagong, Sylhet, Khulna, and Rajshahi. Express delivery available in Dhaka within 4–6 hours from pick-up to drop-off.</p>
                 </div>
              </div>
+             
         </div>
     );
 };
