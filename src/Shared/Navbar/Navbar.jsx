@@ -29,7 +29,7 @@ const Navbar = () => {
       </ul>
     </div>
    <div className='flex justify-center '>
-     <Logo></Logo><a className="btn btn-ghost text-xl">QuickBasket</a>
+     <Logo></Logo><a className="btn btn-ghost text-xl -pr-50">QuickBasket</a>
    </div>
     
   </div>
