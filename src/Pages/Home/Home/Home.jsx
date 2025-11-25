@@ -4,6 +4,8 @@ import HowWorks from '../HowWorks/HowWorks';
 import Servics from '../Servics/Servics';
 import Support from '../Support/Support';
 import CustomerSatis from '../CustomerSatis/CustomerSatis';
+import CustomerRatings from '../CustomerSatis/CustomerRatings/CustomerRatings';
+import Brad from '../Brand/Brad';
 
 const Home = () => {
     return (
@@ -18,10 +20,16 @@ const Home = () => {
             <Servics></Servics>
           </div>
           <div>
+            <Brad></Brad>
+          </div>
+          <div>
             <Support></Support>
           </div>
           <div>
             <CustomerSatis></CustomerSatis>
+          </div>
+          <div>
+          <CustomerRatings></CustomerRatings>
           </div>
         </div>
     );
