@@ -5,7 +5,7 @@ import Servics from '../Servics/Servics';
 import Support from '../Support/Support';
 import CustomerSatis from '../CustomerSatis/CustomerSatis';
 import CustomerRatings from '../CustomerSatis/CustomerRatings/CustomerRatings';
-import Brad from '../Brand/Brad';
+// import Brad from '../Brand/Brad';
 
 const Home = () => {
     return (
@@ -19,9 +19,9 @@ const Home = () => {
           <div>
             <Servics></Servics>
           </div>
-          <div>
+          {/* <div>
             <Brad></Brad>
-          </div>
+          </div> */}
           <div>
             <Support></Support>
           </div>
