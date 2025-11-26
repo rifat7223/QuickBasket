@@ -9,7 +9,7 @@ const AuthLayout = () => {
                 <Logo></Logo>
             </div>
            <div className='flex'>
-             <div className='flex-1'>
+             <div className='flex-1 mt-15'>
                 <Outlet></Outlet>
             </div>
             <div className='flex-1SSs'>
