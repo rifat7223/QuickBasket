@@ -43,8 +43,9 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="flex gap-4 navbar-end">
-    <a className="btn">Sing In</a>
-    <a className="btn">Sing Up</a>
+    
+    <button className="btn"><NavLink to='/login'>Sing In</NavLink></button>
+    <button className="btn"><NavLink to='/register'>Sing Up</NavLink></button>
   </div>
 </div>
         </div>
