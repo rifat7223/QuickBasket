@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import{createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithPopup} from 'firebase/auth';
+import{createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithPopup, signOut} from 'firebase/auth';
 import { AuthContext } from '../AuthContext/AuthContext';
 import { auth } from '../../Firbase/Firbase.init';
 import { GoogleAuthProvider } from 'firebase/auth';
@@ -20,7 +20,12 @@ const AuthProvider = ({children}) => {
                setLoading(true)
         return signInWithPopup(auth,provider)
     }
+    const logout=()=>{
+    setLoading(true)
+   return signOut(auth)
+}
     const authInfo={
+        logout,
         loading,
         user,
 registerUser,
