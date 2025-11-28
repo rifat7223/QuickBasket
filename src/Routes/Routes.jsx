@@ -6,6 +6,10 @@ import Coverage from "../Pages/Coverage/Coverage";
 import AuthLayout from "../Layout/AuthLayout";
 import Login from "../Pages/Auth/Login/Login";
 import Register from "../Pages/Auth/Register/Register";
+import BeRider from "../Pages/BeRider/BeRider";
+import Pricing from "../Pages/Pricing/Pricing";
+import About from "../Pages/About/About";
+import SendParcel from "../Pages/SendParcel/SendParcel";
 
 export const router = createBrowserRouter([
   {
@@ -15,7 +19,15 @@ export const router = createBrowserRouter([
         {path:'/',Component:Home},
         {path:'/Coverage',
           loader:()=>fetch('/Service.json'),
-          Component:Coverage}
+          Component:Coverage},
+          {path:'/sendPaecel',
+             loader:()=>fetch('/Service.json'),
+            element:<SendParcel></SendParcel>},
+          {path:'/beRider', element:<BeRider></BeRider>},
+          {path:'/Pricing',
+           
+            element:<Pricing></Pricing>},
+          {path:'/about',element:<About></About>}
     ]
     
   },
